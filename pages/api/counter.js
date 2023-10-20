@@ -12,7 +12,7 @@ export default async (req, res) => {
             .find({ "_id": ID_COUNTER })
             .toArray();
 
-        const value = data[0].counter % 501;
+        const value = data[0].counter % 351;
 
         await db
             .collection("counter")
